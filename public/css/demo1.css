@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+
+/* Color schemes */
+.demo-1 {
+	--color-text: #efedeb;
+	--color-bg: #0e0e0e;
+	--color-link: #152129;
+	--color-link-hover: #555;
+	--color-info: #fff;
+	--color-main-text: #1d1c1c;
+	--color-scroll-text: #efedeb;
+	--font-scroll-text: 'Roboto Mono', monospace;
+	--fontsize-scroll-text: 8vw;
+}
+
+.content__main {
+	color: #fcb812;
+}
+
+.js .content__text::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	height: 69%;
+	bottom: 0;
+	width: calc(6vmax - 1.5rem);
+	background: var(--color-link);
+}
+
+.card{
+	background-color: #152129;
+	color:  #fcb812;
+	border: none;
+	border-radius: 5px;
+	min-height: 200px;
+	box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+.card:hover{
+	transform: scale(1.05);
+ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.card-title{
+	font-size: 12px;
+}
+.card-body{
+	font-size: 12px;
+}
+.gallery-image{
+	max-width: 100%;
+}
+
+.btn-download{
+	padding: 10px 20px;
+	margin-left: 10px;
+	background-color: black;
+	color: #fff;
+	font-size: 20px;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	border-bottom: 1px solid #fcb812;
+}
+
+.qr-photo > img{
+	width: 200px;
+}
+
+.form-group{
+	display: flex;
+	justify-content: space-around;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+input{
+	padding: 10px 20px;
+	margin-left: 10px;
+	background-color: black;
+	color: #fff;
+	font-size: 20px;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	border-bottom: 1px solid #fcb812;
+}
+input:-internal-autofill-selected{
+	padding: 10px 20px;
+	margin-left: 10px;
+	background-color: black !important;
+	color: #fff;
+	font-size: 20px;
+	background-color: rgba(0,0,0,0)!important;
+	border: none;
+	border-bottom: 1px solid #fcb812;
+}
+
+.btn-download:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
