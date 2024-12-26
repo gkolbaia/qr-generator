@@ -106,6 +106,8 @@ $(document).ready(function(){
                 $(".work-tel").text("Work Tel: " + res.worktel);
                 $(".address").text("address: " + res.address);
                 $(".web").text("Website: " + res.website);
+                $(".linkedin").text("Linkedin: " + res.linkedinUserName);
+                $(".facebook").text("facebook: " + res.facebookUserName);
             }
         });
     });
